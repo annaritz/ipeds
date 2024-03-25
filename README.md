@@ -17,11 +17,21 @@ Here, I explain how to Download all IPEDS data. On their [Use the Data](https://
 
 ![Screenshot 2024-03-25 at 11 19 54 AM](https://github.com/annaritz/ipeds/assets/1457970/cc154d5b-a22f-4cbe-8f32-95f70faeb60d)
 
+_Screenshot of [Use the Data](https://nces.ed.gov/ipeds/use-the-data) webpage_
+
 Each dataset comes as an Access database along with an Excel file of metadata. The compressed Access database already includes the Excel file. Click on one of these Access databases and extract the folder. Note that the most recent data is provisional and might contain slightly different values than the final datasets. For this example, we will use the 2021-22 Access dataset, which extracts a folder called `IPEDS_2021-22_Final/`.
+
+![Screenshot 2024-03-25 at 4 42 38 PM](https://github.com/annaritz/ipeds/assets/1457970/87feebdc-b579-4dd5-a956-ebe37daa89b3)
+
+_Screenshot of [IPEDS Access Databases](https://nces.ed.gov/ipeds/use-the-data/download-access-database)_
 
 ### Select Tables
 
 The Excel spreadsheet folder (`IPEDS202122TablesDoc.xlsx`) contains information about all tables, variables, and metadata definitions for the database. The `Tables21` spreadsheet lists all tables and table descriptions. I used `C2021_A` in my analysis, which lists "Awards/degrees conferred by program (6-digit CIP code), award level, race/ethnicity, and gender: July 1, 2020 to June 30, 2021."
+
+![Screenshot 2024-03-25 at 4 46 43 PM](https://github.com/annaritz/ipeds/assets/1457970/e1ecf470-ec85-4bce-bb07-c096df7559aa)
+
+_Screenshot of `Tables21` sheet in `IPEDS202122TablesDoc.xlsx`_
 
 ### Convert Tables to CSV Files
 
@@ -53,7 +63,11 @@ The Excel spreadsheet (`IPEDS202122TablesDoc.xlsx`) lists all the variables for 
 
 - All institutions are coded by a `UNITID`: Reed's ID is `209922`
 - `AWLEVEL` is the _type_ of degree: a Bachelor's is coded as `5`
-- `MAJORNUM` determines the first or second majors; Reed has very few double majors so it's save to set this to `1`
+- `MAJORNUM` determines the first or second majors; Reed has very few double majors so it's safe to set this to `1`
+
+![Screenshot 2024-03-25 at 4 45 11 PM](https://github.com/annaritz/ipeds/assets/1457970/400f2365-ba2b-4119-b0ba-18e64a1ff7a8)
+
+_Screenshot of `vartable21` sheet in `IPEDS202122TablesDoc.xlsx`_
 
 ### CIP Codes
 
