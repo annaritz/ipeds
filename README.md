@@ -82,7 +82,7 @@ CIP Code | Full Name | Shortened Name
 40.0801 | Physics, General| Physics
 11.0101 | Computer and Information Sciences, General| CS
 26.0202 | Biochemistry| BMB
-27.0101 | 27.0101	Mathematics, General | Math
+27.0101 | Mathematics, General | Math
 30.0801 | Mathematics and Computer Science | MathCS
 99 | Grand total | AllMajors
 
